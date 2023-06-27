@@ -1,0 +1,87 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    background: linear-gradient(320deg, #332c16, #463002);
+}
+
+.register-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.register-box h2{
+    text-align: center;
+    color: peru;
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+.register-box .user-box{
+    position: relative;
+}
+
+.register-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    background: transparent;
+    border-bottom: 1PX solid #fff;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.register-box .user-box label{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.register-box .user-box input:focus ~ label,
+.register-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+
+.register-box form a{
+    margin-left: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: peru;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.register-box form a:hover{
+    color: #fff;
+    background: peru;
+    border-radius: 4px;
+}
+
+.register-box form a span{
+    position: absolute;
+    display: block;
+}
